@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary2"
+    android:paddingLeft="0px"
+    android:paddingRight="0px"
+    android:paddingTop="0px"
+    style="@style/FullscreenTheme"
+    android:layout_marginBottom="-4dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black3"
+        android:id="@+id/llMessages"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="0px"
+            android:paddingTop="0px"
+            android:showDividers="none"
+            android:visibility="visible"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="enter message to post:"
+                android:textColor="@color/green"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:focusable="false"
+                android:typeface="normal"
+                android:background="@color/black3" />
+            <EditText
+                android:id="@+id/tvMessage"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@color/black3"
+                android:inputType="textMultiLine"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text=""
+                android:typeface="monospace"
+                android:minHeight="64dp"
+                android:layout_gravity="top"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:editable="false" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="0dp"
+            android:paddingTop="0px">
+           <LinearLayout
+            android:background="@color/colorPrimary2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingTop="0dp"
+		
+            android:layout_marginLeft="-1.6dp"
+            android:layout_marginRight="-1.5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+					   android:paddingBottom="1dp"
+                android:layout_marginLeft="-1dp"
+                android:layout_marginRight="-1dp">
+                    <Button
+                        style="@style/NXKBSyleN"
+                        android:id="@+id/mwbutton_1"
+                        android:text="1"
+                        android:textColor="@color/gray" />
+                    <Button
+                        style="@style/NXKBSyleN"
+                        android:id="@+id/mwbutton_2"
+                        android:text="2"
+                        android:textColor="@color/gray" />
+                    <Button
+                        android:textColor="@color/gray"
+                        style="@style/NXKBSyleN"
+                        android:id="@+id/mwbutton_3"
+                        android:text="3" />
+                    <Button
+                        android:textColor="@color/gray"
+                        style="@style/NXKBSyleN"
+                        android:id="@+id/mwbutton_4"
+                        android:text="4" />
+                    <Button
+                        android:textColor="@color/gray"
+                        style="@style/NXKBSyleN"
+                        android:id="@+id/mwbutton_5"
+                        android:text="5" />
+                    <Button
+                        android:textColor="@color/gray"
+                        style="@style/NXKBSyleN"
+                        android:id="@+id/mwbutton_6"
+                        android:text="6" />
+                    <Button
+                        android:textColor="@color/gray"
+                        style="@style/NXKBSyleN"
+                        android:id="@+id/mwbutton_7"
+                        android:text="7" />
+                    <Button
+                        android:textColor="@color/gray"
+                        style="@style/NXKBSyleN"
+                        android:id="@+id/mwbutton_8"
+                        android:text="8" />
+                    <Button
+                        android:textColor="@color/gray"
+                        style="@style/NXKBSyleN"
+                        android:id="@+id/mwbutton_9"
+                        android:text="9" />
+                    <Button
+                        android:textColor="@color/gray"
+                        style="@style/NXKBSyleN"
+                        android:id="@+id/mwbutton_0"
+                        android:text="0" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_Q"
+                        android:text="Q" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_W"
+                        android:text="W" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_E"
+                        android:text="E" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_R"
+                        android:text="R" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_T"
+                        android:text="T" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_Y"
+                        android:text="Y" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_U"
+                        android:text="U" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_I"
+                        android:text="I" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_O"
+                        android:text="O" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_P"
+                        android:text="P" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_A"
+                        android:text="A" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_S"
+                        android:text="S" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_D"
+                        android:text="D" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_F"
+                        android:text="F" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_G"
+                        android:text="G" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_H"
+                        android:text="H" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_J"
+                        android:text="J" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_K"
+                        android:text="K" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_L"
+                        android:text="L" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:layout_weight="0.95"
+                        android:id="@+id/mwbutton_SHIFT"
+                        android:text="^"
+                        android:inputType="none|textNoSuggestions"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_Z"
+                        android:text="Z" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_X"
+                        android:text="X" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_C"
+                        android:text="C" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_V"
+                        android:text="V" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_B"
+                        android:text="B" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_N"
+                        android:text="N" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:id="@+id/mwbutton_M"
+                        android:text="M" />
+                    <Button
+                        style="@style/NXKBSyle"
+                        android:layout_weight="0.95"
+                        android:id="@+id/mwbutton_delete"
+                        android:text="DEL"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="2dp">
+                    <LinearLayout
+                        android:layout_weight="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="end"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="2dp"
+                        android:paddingLeft="0dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="end"
+                            android:background="#303F9F"
+                            android:paddingRight="3dp"
+                            android:paddingBottom="0dp"
+                            android:paddingTop="2dp"
+                            android:paddingLeft="0dp">
+                            <Button
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:cursorVisible="false"
+                                android:inputType="none"
+                                android:paddingBottom="8dp"
+                                android:id="@+id/mwbutton_CAPS"
+                                android:text="CAPS"
+                                android:textColor="@color/gray"
+                                android:background="@drawable/selectorEnter" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingLeft="5dp">
+                        <Button
+                            style="@style/NXKBSyle"
+                            android:id="@+id/mwbutton_Quote"
+                            android:layout_weight="1"
+                            android:text="'"
+                            android:visibility="gone" />
+                        <Button
+                            style="@style/NXKBSyle"
+                            android:id="@+id/mwbutton_AT"
+                            android:layout_weight="1"
+                            android:text="\@"
+                            android:visibility="gone" />
+                        <Button
+                            style="@style/NXKBSyle"
+                            android:id="@+id/mwbutton_UnderS"
+                            android:layout_weight="1"
+                            android:text="_"
+                            android:visibility="gone" />
+                        <Button
+                            style="@style/NXKBSyle"
+                            android:id="@+id/mwbutton_SemiC"
+                            android:layout_weight="1"
+                            android:text=":"
+                            android:visibility="gone" />
+                        <Button
+                            style="@style/NXKBSyleS"
+                            android:id="@+id/mwbutton_SPACE"
+                            android:text="SPACE" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="end"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="2dp"
+                        android:paddingLeft="0dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="end"
+                            android:background="#303F9F"
+                            android:paddingRight="0dp"
+                            android:paddingBottom="0dp"
+                            android:paddingTop="2dp"
+                            android:paddingLeft="3dp">
+                            <Button
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:cursorVisible="false"
+                                android:inputType="none"
+                                android:paddingBottom="8dp"
+                                android:id="@+id/btnSendMessage"
+                                android:text="SEND"
+                                android:textColor="@color/gray"
+                                android:background="@drawable/selectorEnter" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

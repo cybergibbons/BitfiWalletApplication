@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:showDividers="none"
+       android:layout_marginLeft="0.01dp"
+                android:layout_marginRight="0.01dp"
+	 android:id="@+id/linearLayoutllM"
+    style="@style/FullscreenTheme"
+    android:background="@color/colorOffWhite">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp"
+        android:paddingRight="13dp"
+		                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+        android:background="@color/colorPrimaryDark">
+        <ImageView
+            android:src="@drawable/logo2_svg"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/imageView3"
+            android:adjustViewBounds="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp">
+            <LinearLayout
+				 android:id="@+id/linearLayoutllM2"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:showDividers="none"
+                android:visibility="visible"
+                android:textAlignment="viewEnd"
+                android:paddingTop="5dp">
+                <ImageView
+                    android:src="@drawable/ic_icon_wifi"
+                    android:id="@+id/imageViewW1"
+                    android:textAlignment="viewStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:paddingRight="10px" />
+                <ImageView
+                    android:src="@drawable/ic_icon_wifi_disabled"
+                    android:id="@+id/imageViewW2"
+                    android:textAlignment="viewStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:paddingRight="10px"
+                    android:visibility="visible" />
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp" />
+                <ImageView
+                    android:src="@drawable/ic_icon_battery"
+                    android:id="@+id/imageViewB1"
+                    android:textAlignment="viewStart"
+                    android:layout_width="20dp"
+                    android:layout_height="18dp"
+                    android:paddingRight="10px" />
+                <ImageView
+                    android:src="@drawable/ic_icon_battery_on_charge"
+                    android:id="@+id/imageViewB2"
+                    android:textAlignment="viewStart"
+                    android:layout_width="20dp"
+                    android:layout_height="17dp"
+                    android:paddingRight="10px" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:id="@+id/txtBPercent"
+                    android:typeface="normal"
+                    android:textSize="9dp"
+                    android:textColor="@color/colorWhite"
+                    android:text="20%"
+                    android:textStyle="normal"
+                    android:paddingTop="3dp"
+                    android:paddingLeft="5dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+     <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="-15dp"
+                android:layout_marginRight="-15dp"
+                android:background="@color/colorWhite" />
+		       
+	  
+		
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+		    android:paddingLeft="5dp"
+        android:id="@+id/linearLayout14">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:showDividers="none"
+            android:visibility="gone"
+            android:paddingBottom="5dp"
+            android:id="@+id/linearLayoutWifi"
+            android:background="@color/colorWhite"
+            android:paddingTop="5dp"
+            android:paddingLeft="14dp">
+            <ImageView
+                android:src="@drawable/ic_icon_wifi_disabled_large"
+                android:id="@+id/imageView1"
+                android:textAlignment="viewStart"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:paddingRight="2dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/txtNoWifi"
+                android:typeface="normal"
+                android:textSize="12dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="There's no WiFi connection."
+                android:textStyle="normal"
+                android:paddingTop="2dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout7"
+            android:background="@color/colorWhite" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:showDividers="none"
+            android:visibility="gone"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/linearLayoutBattery"
+            android:paddingBottom="10dp"
+            android:background="@color/colorOffWhite"
+            android:paddingLeft="8dp">
+            <ImageView
+                android:src="@drawable/ic_icon_battery_low"
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:paddingRight="10px" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/txtBatteryLow"
+                android:typeface="normal"
+                android:textSize="12dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Your device battery is low."
+                android:height="20dp"
+                android:paddingTop="2dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout11"
+            android:textAlignment="viewStart"
+            android:paddingTop="2dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           
+            android:id="@+id/linearLayout12"
+            android:paddingTop="15dp"
+            android:textAlignment="viewStart">
+				   <ImageView
+                android:src="@drawable/ic_iconwalletbalance"
+                android:id="@+id/imageView1"
+                android:textAlignment="viewStart"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+				  android:paddingLeft="15dp"
+                android:paddingRight="0dp" />
+            <Button
+                android:id="@+id/btnBalances"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Wallet Balance"
+                android:textColor="@color/colorPrimaryDarkD"
+                android:textSize="16dp"
+                android:typeface="normal"
+                android:textStyle="normal"
+                android:drawablePadding="0dp"
+                android:textAlignment="textStart"
+                android:capitalize="none"
+                android:textAllCaps="false"
+                android:textDirection="ltr"
+                android:background="@color/colorOffWhite"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorWhite" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+         
+            android:id="@+id/linearLayout12"
+            android:paddingTop="10dp"
+            android:textAlignment="viewStart">
+				   <ImageView
+                android:src="@drawable/ic_icons_paymentaddress"
+                android:id="@+id/imageView1"
+                android:textAlignment="viewStart"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+				  android:paddingLeft="15dp"
+                android:paddingRight="0dp" />
+            <Button
+                android:id="@+id/btnAddresses"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Payment Addresses"
+                android:textColor="@color/colorPrimaryDarkD"
+                android:textSize="16dp"
+                android:typeface="normal"
+                android:textStyle="normal"
+                android:drawablePadding="0dp"
+                android:textAlignment="textStart"
+                android:capitalize="none"
+                android:textAllCaps="false"
+                android:textDirection="ltr"
+                android:background="@color/colorOffWhite"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorWhite" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+         
+            android:id="@+id/linearLayout124"
+            android:paddingTop="15dp"
+            android:textAlignment="viewStart">
+			   <ImageView
+                android:src="@drawable/ic_icons_devmessenger_circle"
+                android:id="@+id/imageView1"
+                android:textAlignment="viewStart"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+				  android:paddingLeft="15dp"
+                android:paddingRight="0dp" />
+            <Button
+                android:id="@+id/btnMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="DevMessage"
+                android:textColor="@color/colorPrimaryDarkD"
+                android:textSize="16dp"
+                android:typeface="normal"
+                android:textStyle="normal"
+                android:drawablePadding="0dp"
+                android:textAlignment="textStart"
+                android:capitalize="none"
+                android:textAllCaps="false"
+                android:textDirection="ltr"
+                android:background="@color/colorOffWhite"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+			    android:paddingLeft="5dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="10dp"
+		
+            android:paddingRight="0dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+          
+                android:paddingTop="0dp"
+                android:textAlignment="viewStart">
+				   <ImageView
+                android:src="@drawable/deviceiddark"
+                android:id="@+id/imageView1"
+                android:textAlignment="viewStart"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+				  android:paddingLeft="15dp"
+                android:paddingRight="0dp" />
+                <Button
+                    android:id="@+id/btnWalletID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Device ID"
+                    android:textColor="@color/colorPrimaryDarkD"
+                    android:textSize="16.5dp"
+                    android:typeface="normal"
+                    android:textStyle="normal"
+                    android:drawablePadding="0dp"
+                    android:textAlignment="textStart"
+                    android:capitalize="none"
+                    android:textAllCaps="false"
+                    android:textDirection="ltr"
+                    android:background="@color/colorOffWhite"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorWhite" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:showDividers="none"
+                android:textAlignment="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtAppCode22"
+                    android:textAlignment="viewStart"
+                    android:typeface="normal"
+                    android:textSize="14dp"
+                    android:textColor="@color/black_overlay"
+                    android:textStyle="italic"
+                    android:text="View and sync with your dashboard." />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+          
+                android:paddingTop="5dp"
+                android:textAlignment="viewStart">
+				   <ImageView
+                android:src="@drawable/ic_icon_network"
+                android:id="@+id/imageView1"
+                android:textAlignment="viewStart"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+				  android:paddingLeft="15dp"
+                android:paddingRight="0dp" />
+                <Button
+                    android:id="@+id/btnWifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Network Settings"
+                    android:textColor="@color/colorPrimaryDarkD"
+                    android:textSize="16dp"
+                    android:typeface="normal"
+                    android:textStyle="normal"
+                    android:drawablePadding="0dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:capitalize="none"
+                    android:textAlignment="viewStart"
+                    android:textDirection="ltr"
+                    android:background="@color/colorOffWhite"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorWhite" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:showDividers="none"
+                android:textAlignment="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtAppCode2"
+                    android:textAlignment="viewStart"
+                    android:typeface="normal"
+                    android:textSize="14dp"
+                    android:textColor="@color/black_overlay"
+                    android:textStyle="italic"
+                    android:text="Connect to 2G Wifi networks in range." />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+		 
+</LinearLayout>

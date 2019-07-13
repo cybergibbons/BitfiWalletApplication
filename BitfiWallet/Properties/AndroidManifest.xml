@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest package="app.rokits.android" xmlns:p1="http://schemas.android.com/apk/res/android" p1:installLocation="auto" p1:versionCode="112" p1:versionName="112">
+	<uses-permission p1:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission p1:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission p1:name="android.permission.BATTERY_STATS" />
+	<uses-permission p1:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+	<uses-permission p1:name="android.permission.CHANGE_CONFIGURATION" />
+	<uses-permission p1:name="android.permission.CHANGE_NETWORK_STATE" />
+	<uses-permission p1:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+	<uses-permission p1:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission p1:name="android.permission.INTERNET" />
+	<uses-permission p1:name="android.permission.MODIFY_PHONE_STATE" />
+	<uses-permission p1:name="android.permission.RESTART_PACKAGES" />
+	<uses-permission p1:name="android.permission.SET_ORIENTATION" />
+	<uses-permission p1:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission p1:name="android.permission.VIBRATE" />
+	<application p1:label="Bitfi" p1:largeHeap="false"></application>
+	<uses-sdk />
+</manifest>

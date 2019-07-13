@@ -1,0 +1,1165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Crosslight.Xamarin.Build.Download.25.3.1\build\Crosslight.Xamarin.Build.Download.props" Condition="Exists('..\packages\Crosslight.Xamarin.Build.Download.25.3.1\build\Crosslight.Xamarin.Build.Download.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{354BAC6D-B0C0-497F-A0D9-65DCFA1B9A77}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BitfiWallet</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <AssemblyName>XAndroidApp</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <SignAssembly>false</SignAssembly>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <DevInstrumentationEnabled>True</DevInstrumentationEnabled>
+    <ReleaseVersion>16</ReleaseVersion>
+    <SynchReleaseVersion>false</SynchReleaseVersion>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">.\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <AndroidKeyStore>false</AndroidKeyStore>
+    <AndroidSigningKeyStore>C:\Users\RokitMac\Desktop\NoxAdmin2\NOXKEY.jks</AndroidSigningKeyStore>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <Debugger>Xamarin</Debugger>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoStdLib>false</NoStdLib>
+    <AndroidKeyStore>
+    </AndroidKeyStore>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidSupportedAbis>
+    </AndroidSupportedAbis>
+    <MandroidI18n>
+    </MandroidI18n>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableMultiDex>false</AndroidEnableMultiDex>
+    <EnableProguard>False</EnableProguard>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidStoreUncompressedFileExtensions>
+    </AndroidStoreUncompressedFileExtensions>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <AndroidTlsProvider>btls</AndroidTlsProvider>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <Debugger>Native</Debugger>
+    <DebugSymbols>false</DebugSymbols>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>anycpu</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <DefineConstants>TRACE</DefineConstants>
+    <NoStdLib>false</NoStdLib>
+    <AndroidKeyStore>
+    </AndroidKeyStore>
+    <AndroidSigningKeyStore>
+    </AndroidSigningKeyStore>
+    <AndroidSigningStorePass>
+    </AndroidSigningStorePass>
+    <MandroidI18n>
+    </MandroidI18n>
+    <EnableProguard>true</EnableProguard>
+    <JavaMaximumHeapSize>
+    </JavaMaximumHeapSize>
+    <AotAssemblies>true</AotAssemblies>
+    <EnableLLVM>true</EnableLLVM>
+    <BundleAssemblies>true</BundleAssemblies>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidEnableMultiDex>false</AndroidEnableMultiDex>
+    <AndroidSupportedAbis>
+    </AndroidSupportedAbis>
+    <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
+    <AndroidLinkMode>Full</AndroidLinkMode>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <AndroidStoreUncompressedFileExtensions>
+    </AndroidStoreUncompressedFileExtensions>
+    <AndroidLinkSkip>
+    </AndroidLinkSkip>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <AndroidTlsProvider>btls</AndroidTlsProvider>
+    <LangVersion>7.3</LangVersion>
+    <JavaOptions />
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\Lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL" />
+    <Reference Include="System.Core, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\Lib\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.monoandroid">
+      <HintPath>..\Lib\zxing.monoandroid.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile">
+      <HintPath>..\Lib\ZXing.Net.Mobile.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AltCoinGen.cs" />
+    <Compile Include="APLGen.cs" />
+    <Compile Include="Apollo\AplAddress.cs" />
+    <Compile Include="Apollo\ApolloLibrary.cs" />
+    <Compile Include="Apollo\Converters.cs" />
+    <Compile Include="Apollo\Curve25519.cs" />
+    <Compile Include="Apollo\Models\Account.cs" />
+    <Compile Include="Apollo\Models\AccountTxes.cs" />
+    <Compile Include="Apollo\Models\BroadcastResponse.cs" />
+    <Compile Include="Apollo\Models\SendTx.cs" />
+    <Compile Include="Apollo\Models\Transaction.cs" />
+    <Compile Include="Apollo\Models\UnsignedTx.cs" />
+    <Compile Include="Apollo\NodeApi.cs" />
+    <Compile Include="Apollo\Utils.cs" />
+    <Compile Include="ConnectActivity.cs" />
+    <Compile Include="EtherLibrary\Hex\HexConvertors\Extensions\HexByteConvertorExtensions.cs" />
+    <Compile Include="EtherLibrary\MsgSigning.cs" />
+    <Compile Include="EtherLibrary\RLP\IRLPElement.cs" />
+    <Compile Include="EtherLibrary\RLP\RLP.cs" />
+    <Compile Include="EtherLibrary\RLP\RLPCollection.cs" />
+    <Compile Include="EtherLibrary\RLP\RLPItem.cs" />
+    <Compile Include="EtherLibrary\RPL\ConvertorForRLPEncodingExtensions.cs" />
+    <Compile Include="EtherLibrary\Signer\Crypto\DeterministicECDSA.cs" />
+    <Compile Include="EtherLibrary\Signer\Crypto\ECDSASignature.cs" />
+    <Compile Include="EtherLibrary\Signer\Crypto\ECKey.cs" />
+    <Compile Include="EtherLibrary\Signer\EthECDSASignature.cs" />
+    <Compile Include="EtherLibrary\Signer\EthECDSASignatureFactory.cs" />
+    <Compile Include="EtherLibrary\Signer\EthECKey.cs" />
+    <Compile Include="EtherLibrary\Signer\RLPSigner.cs" />
+    <Compile Include="EtherLibrary\Signer\Transaction.cs" />
+    <Compile Include="EtherLibrary\Signer\TransactionBase.cs" />
+    <Compile Include="EtherLibrary\Util\AddressUtil.cs" />
+    <Compile Include="EtherLibrary\Util\ByteUtil.cs" />
+    <Compile Include="EtherLibrary\Util\Sha3Keccack.cs" />
+    <Compile Include="HWS.cs" />
+    <Compile Include="LaunchActivity.cs" />
+    <Compile Include="MainActivityBB.cs" />
+    <Compile Include="MessageActivity.cs" />
+    <Compile Include="NBitLibrary\Altcoins\AltcoinNetworkSets.cs" />
+    <Compile Include="NBitLibrary\Altcoins\BCash.cs" />
+    <Compile Include="NBitLibrary\Altcoins\BGold.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Bitcore.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Colossus.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Dash.cs" />
+    <Compile Include="NBitLibrary\Altcoins\DigiByte.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Dogecoin.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Dystem.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Elements\BitcoinBlindedAddress.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Elements\ElementsBlock.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Elements\ElementsConsensusFactory.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Elements\ElementsExtensions.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Elements\ElementsParams.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Elements\ElementsStringParser.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Elements\ElementsTransaction.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Feathercoin.cs" />
+    <Compile Include="NBitLibrary\Altcoins\ForkIdTransaction.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Gincoin.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Gincoin.Internals\Lyra2Z.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Gincoin.Internals\Lyra2\Lyra2.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Gincoin.Internals\Lyra2\LyraConstants.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Gincoin.Internals\Lyra2\MemoryMatrix.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Gincoin.Internals\Lyra2\Sponge.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Gobyte.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Groestlcoin.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Groestlcoin.Internals\Digest.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Groestlcoin.Internals\DigestEngine.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Groestlcoin.Internals\Groestl512.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Groestlcoin.Internals\GroestlBigCore.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Groestlcoin.Internals\GroestlSmallCore.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Crypto\SHA3\Blake.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Crypto\SHA3\BlueMidnightWish.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Crypto\SHA3\CubeHash.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Crypto\SHA3\Echo.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Crypto\SHA3\Fugue.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Crypto\SHA3\Groestl.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Crypto\SHA3\Hamsi.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Crypto\SHA3\JH.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Crypto\SHA3\Keccak.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Crypto\SHA3\Luffa.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Crypto\SHA3\Shabal.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Crypto\SHA3\SHAvite3.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Crypto\SHA3\SHAvite3Custom.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Crypto\SHA3\SIMD.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Crypto\SHA3\Skein.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Crypto\SHA3\SkeinCustom.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Extensions\ArrayExtensions.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Extensions\Converters.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Hash.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\HashBuffer.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\HashCryptoNotBuildIn.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\HashFactory.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\HashResult.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\HashSize.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\IHash.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\IHashInfo.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\Quark.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\X11.cs" />
+    <Compile Include="NBitLibrary\Altcoins\HashX11\X13.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Koto.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Liquid.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Litecoin.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Mogwai.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Monacoin.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Monoeci.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Polis.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Stratis.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Ufo.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Viacoin.cs" />
+    <Compile Include="NBitLibrary\Altcoins\Zclassic.cs" />
+    <Compile Include="NBitLibrary\Base58Data.cs" />
+    <Compile Include="NBitLibrary\BIP158\BitStream.cs" />
+    <Compile Include="NBitLibrary\BIP158\GolombRiceFilter.cs" />
+    <Compile Include="NBitLibrary\BIP174\PartiallySignedTransaction.cs" />
+    <Compile Include="NBitLibrary\BIP32\BitcoinExtKey.cs" />
+    <Compile Include="NBitLibrary\BIP32\ExtKey.cs" />
+    <Compile Include="NBitLibrary\BIP32\ExtPubKey.cs" />
+    <Compile Include="NBitLibrary\BIP32\KeyPath.cs" />
+    <Compile Include="NBitLibrary\BIP38\BitcoinConfirmationCode.cs" />
+    <Compile Include="NBitLibrary\BIP38\BitcoinEncryptedSecret.cs" />
+    <Compile Include="NBitLibrary\BIP38\BitcoinPassphraseCode.cs" />
+    <Compile Include="NBitLibrary\BIP39\IWordlistSource.cs" />
+    <Compile Include="NBitLibrary\BIP39\KDTable.cs" />
+    <Compile Include="NBitLibrary\BIP39\Language.cs" />
+    <Compile Include="NBitLibrary\BIP39\Mnemonic.cs" />
+    <Compile Include="NBitLibrary\BIP39\Wordlist.cs" />
+    <Compile Include="NBitLibrary\BIP9Deployments.cs" />
+    <Compile Include="NBitLibrary\Bitcoin.cs" />
+    <Compile Include="NBitLibrary\BitcoinAddress.cs" />
+    <Compile Include="NBitLibrary\BitcoinCore\BlockRepository.cs" />
+    <Compile Include="NBitLibrary\BitcoinCore\BlockStore.cs" />
+    <Compile Include="NBitLibrary\BitcoinCore\BlockUndo.cs" />
+    <Compile Include="NBitLibrary\BitcoinCore\BlockUndoStore.cs" />
+    <Compile Include="NBitLibrary\BitcoinCore\CachedBlockProvider.cs" />
+    <Compile Include="NBitLibrary\BitcoinCore\Coins.cs" />
+    <Compile Include="NBitLibrary\BitcoinCore\CoinsView.cs" />
+    <Compile Include="NBitLibrary\BitcoinCore\DataDirectory.cs" />
+    <Compile Include="NBitLibrary\BitcoinCore\IBlockProvider.cs" />
+    <Compile Include="NBitLibrary\BitcoinCore\IndexedBlockStore.cs" />
+    <Compile Include="NBitLibrary\BitcoinCore\IndexedBlockUndoStore.cs" />
+    <Compile Include="NBitLibrary\BitcoinCore\IndexedStore.cs" />
+    <Compile Include="NBitLibrary\BitcoinCore\Store.cs" />
+    <Compile Include="NBitLibrary\BitcoinCore\StoredBlock.cs" />
+    <Compile Include="NBitLibrary\BitcoinCore\StoredItem.cs" />
+    <Compile Include="NBitLibrary\BitcoinPubKeyAddress.cs" />
+    <Compile Include="NBitLibrary\BitcoinSecret.cs" />
+    <Compile Include="NBitLibrary\BitcoinSegwitAddress.cs" />
+    <Compile Include="NBitLibrary\BitcoinStream.cs" />
+    <Compile Include="NBitLibrary\BitcoinStream.Partial.cs" />
+    <Compile Include="NBitLibrary\BitWriter.cs" />
+    <Compile Include="NBitLibrary\Block.cs" />
+    <Compile Include="NBitLibrary\BlockLocator.cs" />
+    <Compile Include="NBitLibrary\BloomFilter.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\Asn1Encodable.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\Asn1EncodableVector.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\Asn1Exception.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\ASN1Generator.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\Asn1InputStream.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\Asn1Null.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\Asn1Object.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\Asn1OctetString.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\ASN1OctetStringParser.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\Asn1Sequence.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\ASN1SequenceParser.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\Asn1Tags.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\DefiniteLengthInputStream.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\DERGenerator.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\DerInteger.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\DerNull.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\DerObjectIdentifier.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\DerOctetString.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\DerOutputStream.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\DerSequence.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\DERSequenceGenerator.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\IAsn1Convertible.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\LimitedInputStream.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\sec\SECNamedCurves.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\sec\SECObjectIdentifiers.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\x9\X9Curve.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\x9\X9ECParameters.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\x9\X9ECParametersHolder.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\x9\X9ECPoint.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\x9\X9FieldElement.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\x9\X9FieldID.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\x9\X9IntegerConverter.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\asn1\x9\X9ObjectIdentifiers.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\AsymmetricKeyParameter.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\BufferedBlockCipher.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\BufferedCipherBase.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\Check.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\CryptoException.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\DataLengthException.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\digests\GeneralDigest.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\digests\LongDigest.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\digests\RipeMD160Digest.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\digests\Sha1Digest.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\digests\Sha224Digest.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\digests\Sha256Digest.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\digests\Sha384Digest.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\digests\Sha512Digest.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\ec\CustomNamedCurves.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\engines\AesFastEngine.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\IAsymmetricBlockCipher.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\IBlockCipher.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\IBufferedCipher.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\ICipherParameters.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\IDigest.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\IDSA.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\IMac.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\InvalidCipherTextException.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\ISigner.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\macs\HMac.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\OutputLengthException.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\paddings\BlockCipherPadding.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\paddings\PaddedBufferedBlockCipher.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\paddings\Pkcs7Padding.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\parameters\ECDomainParameters.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\parameters\ECKeyParameters.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\parameters\ECPrivateKeyParameters.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\parameters\ECPublicKeyParameters.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\parameters\KeyParameter.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\signers\ECDsaSigner.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\signers\HMacDsaKCalculator.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\signers\IDsaKCalculator.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\signers\RandomDsaKCalculator.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\crypto\util\Pack.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\BigInteger.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\abc\SimpleBigDecimal.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\abc\Tnaf.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\abc\ZTauElement.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\custom\sec\SecP256K1Curve.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\custom\sec\SecP256K1Field.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\custom\sec\SecP256K1FieldElement.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\custom\sec\SecP256K1Point.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\ECAlgorithms.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\ECCurve.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\ECFieldElement.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\ECPoint.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\ECPointMap.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\endo\ECEndomorphism.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\endo\GlvEndomorphism.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\endo\GlvTypeBEndomorphism.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\endo\GlvTypeBParameters.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\LongArray.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\multiplier\AbstractECMultiplier.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\multiplier\DoubleAddMultiplier.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\multiplier\ECMultiplier.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\multiplier\FixedPointCombMultiplier.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\multiplier\FixedPointPreCompInfo.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\multiplier\FixedPointUtilities.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\multiplier\GlvMultiplier.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\multiplier\PreCompInfo.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\multiplier\WNafL2RMultiplier.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\multiplier\WNafPreCompInfo.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\multiplier\WNafUtilities.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\multiplier\WTauNafMultiplier.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\multiplier\WTauNafPreCompInfo.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\ec\ScaleXPointMap.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\field\FiniteFields.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\field\GenericPolynomialExtensionField.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\field\GF2Polynomial.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\field\IExtensionField.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\field\IFiniteField.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\field\IPolynomial.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\field\IPolynomialExtensionField.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\field\PrimeField.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\raw\Mod.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\raw\Nat.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\math\raw\Nat256.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\security\GeneralSecurityException.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\security\InvalidKeyException.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\security\KeyException.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\security\SecureRandom.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\util\Arrays.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\util\BigIntegers.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\util\encoders\Hex.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\util\encoders\HexEncoder.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\util\encoders\IEncoder.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\util\IMemoable.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\util\io\BaseInputStream.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\util\io\FilterStream.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\util\io\StreamOverflowException.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\util\io\Streams.cs" />
+    <Compile Include="NBitLibrary\BouncyCastle\util\Platform.cs" />
+    <Compile Include="NBitLibrary\BuilderExtensions\BuilderExtension.cs" />
+    <Compile Include="NBitLibrary\BuilderExtensions\OPTrueExtension.cs" />
+    <Compile Include="NBitLibrary\BuilderExtensions\P2MultiSigBuilderExtension.cs" />
+    <Compile Include="NBitLibrary\BuilderExtensions\P2PKBuilderExtension.cs" />
+    <Compile Include="NBitLibrary\BuilderExtensions\P2PKHBuilderExtension.cs" />
+    <Compile Include="NBitLibrary\BytesComparer.cs" />
+    <Compile Include="NBitLibrary\CachedNoSqlRepository.cs" />
+    <Compile Include="NBitLibrary\CachedTransactionRepository.cs" />
+    <Compile Include="NBitLibrary\ChainBase.cs" />
+    <Compile Include="NBitLibrary\ChainedBlock.cs" />
+    <Compile Include="NBitLibrary\Coin.cs" />
+    <Compile Include="NBitLibrary\ConcurrentChain.cs" />
+    <Compile Include="NBitLibrary\ConsensusFactory.cs" />
+    <Compile Include="NBitLibrary\Crypto\Cryptsharp\BitMath.cs" />
+    <Compile Include="NBitLibrary\Crypto\Cryptsharp\BitPacking.cs" />
+    <Compile Include="NBitLibrary\Crypto\Cryptsharp\Check.cs" />
+    <Compile Include="NBitLibrary\Crypto\Cryptsharp\Exceptions.cs" />
+    <Compile Include="NBitLibrary\Crypto\Cryptsharp\Pbkdf2.cs" />
+    <Compile Include="NBitLibrary\Crypto\Cryptsharp\Salsa20Core.cs" />
+    <Compile Include="NBitLibrary\Crypto\Cryptsharp\SCrypt.cs" />
+    <Compile Include="NBitLibrary\Crypto\Cryptsharp\Security.cs" />
+    <Compile Include="NBitLibrary\Crypto\DeterministicECDSA.cs" />
+    <Compile Include="NBitLibrary\Crypto\ECDSASignature.cs" />
+    <Compile Include="NBitLibrary\Crypto\ECKey.cs" />
+    <Compile Include="NBitLibrary\Crypto\Hashes.cs" />
+    <Compile Include="NBitLibrary\Crypto\HashStream.cs" />
+    <Compile Include="NBitLibrary\Crypto\SchnorrBlindSignature.cs" />
+    <Compile Include="NBitLibrary\Crypto\SchnorrSignature.cs" />
+    <Compile Include="NBitLibrary\DataEncoders\ASCIIEncoder.cs" />
+    <Compile Include="NBitLibrary\DataEncoders\Base58Encoder.cs" />
+    <Compile Include="NBitLibrary\DataEncoders\Base64Encoder.cs" />
+    <Compile Include="NBitLibrary\DataEncoders\Bech32Encoder.cs" />
+    <Compile Include="NBitLibrary\DataEncoders\Encoders.cs" />
+    <Compile Include="NBitLibrary\DataEncoders\HexEncoder.cs" />
+    <Compile Include="NBitLibrary\FeeRate.cs" />
+    <Compile Include="NBitLibrary\FileLock.cs" />
+    <Compile Include="NBitLibrary\IBech32Data.cs" />
+    <Compile Include="NBitLibrary\IBitcoinSerializable.cs" />
+    <Compile Include="NBitLibrary\IBitcoinString.cs" />
+    <Compile Include="NBitLibrary\IBlockRepository.cs" />
+    <Compile Include="NBitLibrary\IDestination.cs" />
+    <Compile Include="NBitLibrary\IHasForkId.cs" />
+    <Compile Include="NBitLibrary\InMemoryNoSqlRepository.cs" />
+    <Compile Include="NBitLibrary\IpExtensions.cs" />
+    <Compile Include="NBitLibrary\ISecret.cs" />
+    <Compile Include="NBitLibrary\ITransactionRepository.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\AssetIdJsonConverter.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\BitcoinSerializableJsonConverter.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\BitcoinStringJsonConverter.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\CoinJsonConverter.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\DateTimeToUnixTimeConverter.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\FeeRateJsonConverter.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\HexJsonConverter.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\JsonObjectException.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\KeyJsonConverter.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\KeyPathJsonConverter.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\LockTimeJsonConverter.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\MoneyJsonConverter.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\NetworkJsonConverter.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\ScriptJsonConverter.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\Serializer.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\SignatureJsonConverter.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\TxDestinationJsonConverter.cs" />
+    <Compile Include="NBitLibrary\JsonConverters\UIntJsonConverter.cs" />
+    <Compile Include="NBitLibrary\Key.cs" />
+    <Compile Include="NBitLibrary\KeyId.cs" />
+    <Compile Include="NBitLibrary\LockTime.cs" />
+    <Compile Include="NBitLibrary\Logging\Logs.cs" />
+    <Compile Include="NBitLibrary\MedianFilter.cs" />
+    <Compile Include="NBitLibrary\MemPoolInfo.cs" />
+    <Compile Include="NBitLibrary\MerkleBlock.cs" />
+    <Compile Include="NBitLibrary\MerkleNode.cs" />
+    <Compile Include="NBitLibrary\Money.cs" />
+    <Compile Include="NBitLibrary\Network.cs" />
+    <Compile Include="NBitLibrary\NetworkBuilder.cs" />
+    <Compile Include="NBitLibrary\NetworkSet.cs" />
+    <Compile Include="NBitLibrary\NetworkStringParser.cs" />
+    <Compile Include="NBitLibrary\NoSqlBlockRepository.cs" />
+    <Compile Include="NBitLibrary\NoSqlRepository.cs" />
+    <Compile Include="NBitLibrary\NoSqlTransactionRepository.cs" />
+    <Compile Include="NBitLibrary\OpenAsset\AssetId.cs" />
+    <Compile Include="NBitLibrary\OpenAsset\AssetMoney.cs" />
+    <Compile Include="NBitLibrary\OpenAsset\BitcoinAssetId.cs" />
+    <Compile Include="NBitLibrary\OpenAsset\BitcoinColoredAddress.cs" />
+    <Compile Include="NBitLibrary\OpenAsset\CachedColoredTransactionRepository.cs" />
+    <Compile Include="NBitLibrary\OpenAsset\ColoredTransaction.cs" />
+    <Compile Include="NBitLibrary\OpenAsset\ColorMarker.cs" />
+    <Compile Include="NBitLibrary\OpenAsset\Extensions.cs" />
+    <Compile Include="NBitLibrary\OpenAsset\IColoredTransactionRepository.cs" />
+    <Compile Include="NBitLibrary\OpenAsset\NoDuplicateColoredTransactionRepository.cs" />
+    <Compile Include="NBitLibrary\OpenAsset\NoSqlColoredTransactionRepository.cs" />
+    <Compile Include="NBitLibrary\OpenAsset\NullColoredTransactionRepository.cs" />
+    <Compile Include="NBitLibrary\PartialMerkleTree.cs" />
+    <Compile Include="NBitLibrary\Policy\ITransactionPolicy.cs" />
+    <Compile Include="NBitLibrary\Policy\MinerTransactionPolicy.cs" />
+    <Compile Include="NBitLibrary\Policy\StandardTransactionPolicy.cs" />
+    <Compile Include="NBitLibrary\PrecomputedTransactionData.cs" />
+    <Compile Include="NBitLibrary\Protobuf\ProtobufReaderWriter.cs" />
+    <Compile Include="NBitLibrary\Protocol\BitcoinSerializablePayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Filters\ActionFilter.cs" />
+    <Compile Include="NBitLibrary\Protocol\Filters\NodeFilter.cs" />
+    <Compile Include="NBitLibrary\Protocol\Filters\NodeFiltersCollection.cs" />
+    <Compile Include="NBitLibrary\Protocol\IMessageProducer.cs" />
+    <Compile Include="NBitLibrary\Protocol\InventoryVector.cs" />
+    <Compile Include="NBitLibrary\Protocol\MessageListener.cs" />
+    <Compile Include="NBitLibrary\Protocol\NetworkAddress.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payload.cs" />
+    <Compile Include="NBitLibrary\Protocol\PayloadAttribute.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\AddrPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\BlockPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\BlockTxnPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\CmpctBlockPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\FilterAddPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\FilterLoadPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\GetAddrPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\GetBlocksPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\GetBlockTxnPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\GetDataPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\GetHeadersPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\HaveWitnessPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\HeadersPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\InvPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\MempoolPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\MerkleBlockPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\NotFoundPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\PingPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\PongPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\RejectPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\SendCmpctPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\SendHeadersPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\TxPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\UTxOutputPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\VerAckPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\Payloads\VersionPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\PerformanceCounter.cs" />
+    <Compile Include="NBitLibrary\Protocol\ProtocolException.cs" />
+    <Compile Include="NBitLibrary\Protocol\UnknowPayload.cs" />
+    <Compile Include="NBitLibrary\Protocol\VarInt.cs" />
+    <Compile Include="NBitLibrary\Protocol\VarString.cs" />
+    <Compile Include="NBitLibrary\Protocol\Versions.cs" />
+    <Compile Include="NBitLibrary\PubKey.cs" />
+    <Compile Include="NBitLibrary\RandomUtils.cs" />
+    <Compile Include="NBitLibrary\RandomUtils.partial.cs" />
+    <Compile Include="NBitLibrary\RPCTransactionRepository.cs" />
+    <Compile Include="NBitLibrary\RPC\BlockExplorerFormatter.cs" />
+    <Compile Include="NBitLibrary\RPC\EstimateSmartFeeMode.cs" />
+    <Compile Include="NBitLibrary\RPC\EstimateSmartFeeResponse.cs" />
+    <Compile Include="NBitLibrary\RPC\FundRawTransactionOptions.cs" />
+    <Compile Include="NBitLibrary\RPC\FundRawTransactionResponse.cs" />
+    <Compile Include="NBitLibrary\RPC\GetAddressInfoResponse.cs" />
+    <Compile Include="NBitLibrary\RPC\GetNewAddressRequest.cs" />
+    <Compile Include="NBitLibrary\RPC\GetTxOutResponse.cs" />
+    <Compile Include="NBitLibrary\RPC\ImportMultiAddress.cs" />
+    <Compile Include="NBitLibrary\RPC\ListUnspentOptions.cs" />
+    <Compile Include="NBitLibrary\RPC\RawFormatter.cs" />
+    <Compile Include="NBitLibrary\RPC\RestClient.cs" />
+    <Compile Include="NBitLibrary\RPC\RPCCapabilities.cs" />
+    <Compile Include="NBitLibrary\RPC\RPCClient.cs" />
+    <Compile Include="NBitLibrary\RPC\RPCClient.Wallet.cs" />
+    <Compile Include="NBitLibrary\RPC\RPCCredentialString.cs" />
+    <Compile Include="NBitLibrary\RPC\RPCException.cs" />
+    <Compile Include="NBitLibrary\RPC\RPCOperations.cs" />
+    <Compile Include="NBitLibrary\RPC\RPCRequest.cs" />
+    <Compile Include="NBitLibrary\RPC\RPCResponse.cs" />
+    <Compile Include="NBitLibrary\RPC\RPCTransactionInput.cs" />
+    <Compile Include="NBitLibrary\RPC\SatoshiFormatter.cs" />
+    <Compile Include="NBitLibrary\RPC\ScanTxoutSetRequest.cs" />
+    <Compile Include="NBitLibrary\RPC\SignRawTransactionWithKeyRequest.cs" />
+    <Compile Include="NBitLibrary\RPC\UnspentCoin.cs" />
+    <Compile Include="NBitLibrary\RPC\WalletCreateFundedPSBTResponse.cs" />
+    <Compile Include="NBitLibrary\RPC\WalletProcessPSBTResponse.cs" />
+    <Compile Include="NBitLibrary\Script.cs" />
+    <Compile Include="NBitLibrary\ScriptEvaluationContext.cs" />
+    <Compile Include="NBitLibrary\ScriptReader.cs" />
+    <Compile Include="NBitLibrary\Sequence.cs" />
+    <Compile Include="NBitLibrary\SequenceLock.cs" />
+    <Compile Include="NBitLibrary\SlimChain.cs" />
+    <Compile Include="NBitLibrary\StandardScripts.cs" />
+    <Compile Include="NBitLibrary\StandardScriptTemplate.cs" />
+    <Compile Include="NBitLibrary\Stealth\BitcoinStealthAddress.cs" />
+    <Compile Include="NBitLibrary\Stealth\StealthMetadata.cs" />
+    <Compile Include="NBitLibrary\Stealth\StealthPayment.cs" />
+    <Compile Include="NBitLibrary\Target.cs" />
+    <Compile Include="NBitLibrary\Transaction.cs" />
+    <Compile Include="NBitLibrary\TransactionBuilder.cs" />
+    <Compile Include="NBitLibrary\TransactionNotFoundException.cs" />
+    <Compile Include="NBitLibrary\TransactionSignature.cs" />
+    <Compile Include="NBitLibrary\UInt2561.cs" />
+    <Compile Include="NBitLibrary\UnsignedList.cs" />
+    <Compile Include="NBitLibrary\Utils.cs" />
+    <Compile Include="NBitLibrary\Utils\ActionDisposable.cs" />
+    <Compile Include="NBitLibrary\Utils\BoundedDictionary.cs" />
+    <Compile Include="NBitLibrary\Utils\ThreadSafeCollection.cs" />
+    <Compile Include="NeoLibrary\Core\Fixed8.cs" />
+    <Compile Include="NeoLibrary\Core\Request.cs" />
+    <Compile Include="NeoLibrary\Core\UInt160.cs" />
+    <Compile Include="NeoLibrary\Core\UInt256.cs" />
+    <Compile Include="NeoLibrary\Core\UIntBase.cs" />
+    <Compile Include="NeoLibrary\Cryptography\Base58.cs" />
+    <Compile Include="NeoLibrary\Cryptography\Crypto.cs" />
+    <Compile Include="NeoLibrary\Cryptography\ECCurve.cs" />
+    <Compile Include="NeoLibrary\Cryptography\ECDsa.cs" />
+    <Compile Include="NeoLibrary\Cryptography\ECFieldElement.cs" />
+    <Compile Include="NeoLibrary\Cryptography\ECPoint.cs" />
+    <Compile Include="NeoLibrary\Cryptography\RIPEMD160Managed.cs" />
+    <Compile Include="NeoLibrary\Helper.cs" />
+    <Compile Include="NeoLibrary\KeyPair.cs" />
+    <Compile Include="NeoLibrary\NeoApi.cs" />
+    <Compile Include="NeoLibrary\NeoRpc\NeoRpcRequest.cs" />
+    <Compile Include="NeoLibrary\NeoRpc\NeoRpcResponse.cs" />
+    <Compile Include="NeoLibrary\NeoRpc\Rpc.cs" />
+    <Compile Include="NeoLibrary\Neoscan\NeoscanApi.cs" />
+    <Compile Include="NeoLibrary\Neoscan\NeoscanAssetBalance.cs" />
+    <Compile Include="NeoLibrary\Neoscan\NeoscanAvailableNodes.cs" />
+    <Compile Include="NeoLibrary\Neoscan\NeoscanBalance.cs" />
+    <Compile Include="NeoLibrary\Neoscan\NeoscanClaimable.cs" />
+    <Compile Include="NeoLibrary\Neoscan\NeoscanEndpointInfo.cs" />
+    <Compile Include="NeoLibrary\Neoscan\NeoscanUnclaimed.cs" />
+    <Compile Include="NeoLibrary\Neoscan\NeoscanUnspent.cs" />
+    <Compile Include="NeoLibrary\RestHelper.cs" />
+    <Compile Include="NoxKeyGen.cs" />
+    <Compile Include="NoxMessage.cs" />
+    <Compile Include="NoxViewModel.cs" />
+    <Compile Include="NoxWifi.cs" />
+    <Compile Include="NWS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Resource.designer.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RipGen.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\CryptoBytes.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Ed25519.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Array16.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Array8.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\ByteIntegerConverter.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\base.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\base2.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\d.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\d2.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_0.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_1.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_add.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_cmov.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_cswap.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_frombytes.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_invert.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_isnegative.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_isnonzero.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_mul.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_mul121666.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_neg.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_pow22523.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_sq.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_sq2.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_sub.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\fe_tobytes.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\FieldElement.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_add.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_double_scalarmult.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_frombytes.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_madd.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_msub.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_p1p1_to_p2.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_p1p1_to_p3.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_p2_0.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_p2_dbl.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_p3_0.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_p3_dbl.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_p3_tobytes.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_p3_to_cached.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_p3_to_p2.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_precomp_0.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_scalarmult_base.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_sub.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\ge_tobytes.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\GroupElement.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\keypair.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\open.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\scalarmult.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\sc_clamp.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\sc_mul_add.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\sc_reduce.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\sign.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Ed25519Ref10\sqrtm1.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\InternalAssert.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Poly1305Donna.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Salsa\Salsa20.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Salsa\SalsaCore.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Internal\Sha512Internal.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\MontgomeryCurve25519.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\OneTimeAuth.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Poly1305.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\Sha512.cs" />
+    <Compile Include="RipLibrary\Chaos.NaCl\XSalsa20Poly1305.cs" />
+    <Compile Include="RipLibrary\Ripple.Address\AddressCodec.cs" />
+    <Compile Include="RipLibrary\Ripple.Address\B58.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Binary\BinaryParser.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Binary\BinarySerializer.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Binary\BufferParser.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Binary\BytesList.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Binary\IBytesSink.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Binary\StreamParser.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\AccountIdField.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\AmountField.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\BlobField.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\Enumeration.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\EnumItem.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\Field.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\FieldType.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\FromJson.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\FromParser.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\Hash128Field.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\Hash160Field.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\Hash256Field.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\PathSetField.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\SerializedEnumeration.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\SerializedEnumItem.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\StArrayField.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\StObjectField.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\Uint16Field.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\Uint32Field.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\Uint64Field.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\Uint8Field.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Enums\Vector256Field.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Hashing\HashPrefix.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Hashing\Sha512.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\ISerializedType.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Ledger\LedgerHeader.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\ShaMapTree\IShaMapItem.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\ShaMapTree\ITreeWalker.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\ShaMapTree\LedgerEntry.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\ShaMapTree\OnLeaf.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\ShaMapTree\PathToIndex.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\ShaMapTree\ShaMap.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\ShaMapTree\ShaMapDiff.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\ShaMapTree\ShaMapInner.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\ShaMapTree\ShaMapLeaf.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\ShaMapTree\ShaMapNode.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\ShaMapTree\TransactionResult.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Transactions\TxFormat.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\AccountId.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\Amount.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\AmountValue.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\Blob.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\Currency.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\EngineResult.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\Hash.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\Hash128.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\Hash160.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\Hash256.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\InvalidJsonException.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\LedgerEntryType.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\PathSet.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\StArray.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\StObject.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\StReader.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\TransactionType.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\Uint.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\Uint16.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\Uint32.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\Uint64.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\Uint8.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\UnissuedAmount.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Types\Vector256.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Util\B16.cs" />
+    <Compile Include="RipLibrary\Ripple.Core\Util\Utils.cs" />
+    <Compile Include="RipLibrary\Ripple.Signing\Ed25519\EdKeyPair.cs" />
+    <Compile Include="RipLibrary\Ripple.Signing\IKeyPair.cs" />
+    <Compile Include="RipLibrary\Ripple.Signing\K256\EcdsaSignature.cs" />
+    <Compile Include="RipLibrary\Ripple.Signing\K256\K256KeyGenerator.cs" />
+    <Compile Include="RipLibrary\Ripple.Signing\K256\K256KeyPair.cs" />
+    <Compile Include="RipLibrary\Ripple.Signing\K256\K256VerifyingKey.cs" />
+    <Compile Include="RipLibrary\Ripple.Signing\K256\Secp256k1.cs" />
+    <Compile Include="RipLibrary\Ripple.Signing\Seed.cs" />
+    <Compile Include="RipLibrary\Ripple.Signing\Utils\HashUtils.cs" />
+    <Compile Include="RipLibrary\Ripple.Signing\Utils\Misc.cs" />
+    <Compile Include="RipLibrary\Ripple.Signing\Utils\Sha512.cs" />
+    <Compile Include="RipLibrary\Ripple.TxSigning\Extensions.cs" />
+    <Compile Include="RipLibrary\Ripple.TxSigning\InvalidTxException.cs" />
+    <Compile Include="RipLibrary\Ripple.TxSigning\SignedTx.cs" />
+    <Compile Include="RipLibrary\Ripple.TxSigning\TxSigner.cs" />
+    <Compile Include="RipLibrary\Ripple.TxSigning\Utils.cs" />
+    <Compile Include="Sclear.cs" />
+    <Compile Include="SecretActivity.cs" />
+    <Compile Include="Utils\Utils.cs" />
+    <Compile Include="Web References\NOXWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SGADWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="XMRGen.cs" />
+    <Compile Include="XMRModels.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Rubik-Black.ttf" />
+    <AndroidAsset Include="Assets\Rubik-BlackItalic.ttf" />
+    <AndroidAsset Include="Assets\Rubik-Bold.ttf" />
+    <AndroidAsset Include="Assets\Rubik-BoldItalic.ttf" />
+    <AndroidAsset Include="Assets\Rubik-Italic.ttf" />
+    <AndroidAsset Include="Assets\Rubik-Light.ttf" />
+    <AndroidAsset Include="Assets\Rubik-LightItalic.ttf" />
+    <AndroidAsset Include="Assets\Rubik-Medium.ttf" />
+    <AndroidAsset Include="Assets\Rubik-MediumItalic.ttf" />
+    <AndroidAsset Include="Assets\Rubik-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidAsset>
+    <AndroidNativeLibrary Include="lib\armeabi-v7a\libbitfi_entry_armeabi-v7a_Release.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="lib\armeabi-v7a\libc++_shared.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <AndroidResource Include="Resources\layout\Secret.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\slide_up.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\nlist.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\nconnect.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\wifi_maina.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <None Include="Web References\NOXWS\NOXWS2.wsdl" />
+    <None Include="Web References\NOXWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\NOXWS\SignedDisplayMsg.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\NOXWS\SignedFormUserInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\NOXWS\SignedNoxAddressRequests.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\NOXWS\SignedNoxGasRequests.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\NOXWS\SignedNoxImageRequests.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\NOXWS\SignedNoxMsgProcess.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\NOXWS\SignedNoxTxnProcess.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SGADWS\NoxAddressReview.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SGADWS\NoxAddressReviewV3.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SGADWS\NoxMessagesConfig.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SGADWS\OverviewViewModel.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SGADWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SGADWS\SGADWS.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <WebReferences Include="Web References" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NBitLibrary\Payment\" />
+    <Folder Include="Resources\font\" />
+    <Folder Include="Resources\xml\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\logo_svg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\logo2_svg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_icon_battery.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_icon_battery_low.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_icon_battery_low_large.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_icon_battery_on_charge.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_icon_wifi.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_icon_wifi_disabled.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_icon_wifi_disabled_large.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://bitfi.com/NoxPortalWS/V1/NOXWS2.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\NOXWS\</RelPath>
+      <UpdateFromURL>https://bitfi.com/NoxPortalWS/V1/NOXWS2.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://bitfi.com/NoxPortalWS/V1/SGADWS.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SGADWS\</RelPath>
+      <UpdateFromURL>https://bitfi.com/NoxPortalWS/V1/SGADWS.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\NOXWS\NOXWS2.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\layout_bg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\layout_bg_press.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\selector.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\selectorEnter.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\selectorNumeric.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\layout_nm.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\selectorSpace.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\layout_bg_pressSpace.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\logo_light.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\logo_lightgreen.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\SGADWS\SGADWS.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\overview.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\perm_group_status_bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\circle_shape.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\circular_progress_bar.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\viewmodel_maina.axml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\layout_bgSpace.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\message.axml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\deviceiddark.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_icon_network.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_icons_devmessenger_circle.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_icons_paymentaddress.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_iconwalletbalance.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\splashmodel.axml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <VersionControlPolicy inheritsSet="Mono" />
+          <TextStylePolicy inheritsSet="Mono" inheritsScope="text/plain" scope="text/plain" />
+          <TextStylePolicy FileWidth="120" NoTabsAfterNonTabs="True" inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/x-fsharp" />
+          <NameConventionPolicy>
+            <Rules>
+              <NamingRule Name="Namespaces" AffectedEntity="Namespace" VisibilityMask="VisibilityMask" NamingStyle="PascalCase" IncludeInstanceMembers="True" IncludeStaticEntities="True" />
+              <NamingRule Name="Types" AffectedEntity="Class, Struct, Enum, Delegate" VisibilityMask="VisibilityMask" NamingStyle="PascalCase" IncludeInstanceMembers="True" IncludeStaticEntities="True" />
+              <NamingRule Name="Interfaces" AffectedEntity="Interface" VisibilityMask="VisibilityMask" NamingStyle="PascalCase" IncludeInstanceMembers="True" IncludeStaticEntities="True">
+                <RequiredPrefixes>
+                  <String>I</String>
+                </RequiredPrefixes>
+              </NamingRule>
+              <NamingRule Name="Attributes" AffectedEntity="CustomAttributes" VisibilityMask="VisibilityMask" NamingStyle="PascalCase" IncludeInstanceMembers="True" IncludeStaticEntities="True">
+                <RequiredSuffixes>
+                  <String>Attribute</String>
+                </RequiredSuffixes>
+              </NamingRule>
+              <NamingRule Name="Event Arguments" AffectedEntity="CustomEventArgs" VisibilityMask="VisibilityMask" NamingStyle="PascalCase" IncludeInstanceMembers="True" IncludeStaticEntities="True">
+                <RequiredSuffixes>
+                  <String>EventArgs</String>
+                </RequiredSuffixes>
+              </NamingRule>
+              <NamingRule Name="Exceptions" AffectedEntity="CustomExceptions" VisibilityMask="VisibilityMask" NamingStyle="PascalCase" IncludeInstanceMembers="True" IncludeStaticEntities="True">
+                <RequiredSuffixes>
+                  <String>Exception</String>
+                </RequiredSuffixes>
+              </NamingRule>
+              <NamingRule Name="Methods" AffectedEntity="Methods" VisibilityMask="VisibilityMask" NamingStyle="PascalCase" IncludeInstanceMembers="True" IncludeStaticEntities="True" />
+              <NamingRule Name="Static Readonly Fields" AffectedEntity="ReadonlyField" VisibilityMask="Internal, Protected, Public" NamingStyle="PascalCase" IncludeInstanceMembers="False" IncludeStaticEntities="True" />
+              <NamingRule Name="Fields (Non Private)" AffectedEntity="Field" VisibilityMask="Internal, Protected, Public" NamingStyle="PascalCase" IncludeInstanceMembers="True" IncludeStaticEntities="True" />
+              <NamingRule Name="ReadOnly Fields (Non Private)" AffectedEntity="ReadonlyField" VisibilityMask="Internal, Protected, Public" NamingStyle="PascalCase" IncludeInstanceMembers="True" IncludeStaticEntities="False" />
+              <NamingRule Name="Fields (Private)" AffectedEntity="Field, ReadonlyField" VisibilityMask="Private" NamingStyle="CamelCase" IncludeInstanceMembers="True" IncludeStaticEntities="False">
+                <AllowedPrefixes>
+                  <String>_</String>
+                  <String>m_</String>
+                </AllowedPrefixes>
+              </NamingRule>
+              <NamingRule Name="Static Fields (Private)" AffectedEntity="Field" VisibilityMask="Private" NamingStyle="CamelCase" IncludeInstanceMembers="False" IncludeStaticEntities="True" />
+              <NamingRule Name="ReadOnly Fields (Private)" AffectedEntity="ReadonlyField" VisibilityMask="Private" NamingStyle="CamelCase" IncludeInstanceMembers="True" IncludeStaticEntities="False">
+                <AllowedPrefixes>
+                  <String>_</String>
+                  <String>m_</String>
+                </AllowedPrefixes>
+              </NamingRule>
+              <NamingRule Name="Constant Fields" AffectedEntity="ConstantField" VisibilityMask="VisibilityMask" NamingStyle="PascalCase" IncludeInstanceMembers="True" IncludeStaticEntities="True" />
+              <NamingRule Name="Properties" AffectedEntity="Property" VisibilityMask="VisibilityMask" NamingStyle="PascalCase" IncludeInstanceMembers="True" IncludeStaticEntities="True" />
+              <NamingRule Name="Events" AffectedEntity="Event" VisibilityMask="VisibilityMask" NamingStyle="PascalCase" IncludeInstanceMembers="True" IncludeStaticEntities="True" />
+              <NamingRule Name="Enum Members" AffectedEntity="EnumMember" VisibilityMask="VisibilityMask" NamingStyle="PascalCase" IncludeInstanceMembers="True" IncludeStaticEntities="True" />
+              <NamingRule Name="Parameters" AffectedEntity="Parameter" VisibilityMask="VisibilityMask" NamingStyle="CamelCase" IncludeInstanceMembers="True" IncludeStaticEntities="True" />
+              <NamingRule Name="Type Parameters" AffectedEntity="TypeParameter" VisibilityMask="VisibilityMask" NamingStyle="PascalCase" IncludeInstanceMembers="True" IncludeStaticEntities="True">
+                <RequiredPrefixes>
+                  <String>T</String>
+                </RequiredPrefixes>
+              </NamingRule>
+            </Rules>
+          </NameConventionPolicy>
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>
